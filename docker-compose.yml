@@ -1,0 +1,4 @@
+services:
+  date:
+    build:
+      dockerfile: date.dockerfile
