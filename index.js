@@ -4,8 +4,8 @@ const { default: fetch } = require('node-fetch')
 const app = express()
 
 app.get('/', (req, res) => {
-  fetch('http://localhost:3005')
-    .then((res) => res.text())
+  fetch('http://date:3005')
+    .then((res) => res.json())
     .then((data) => {
       res.send(`Hello! Current date: ${data}\n`)
     })

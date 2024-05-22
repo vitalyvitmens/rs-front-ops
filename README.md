@@ -70,3 +70,12 @@ docker build -t rs-front-ops .
 #### проверяем что привязки портов нет: 
 - docker ps
 #### вместо 0.0.0.0:1000->3000/tcp увидим: 3000/tcp 
+
+### поднимаем docker
+- docker compose up -d
+### стучимся по порту 3000 поднятом Docker
+- curl localhost:3000
+### что бы положить наши контейнеры:
+- docker compose down
+### что бы положить конкретный контейнер например с id: a665e95e9d21:
+- docker stop a665e95e9d21
