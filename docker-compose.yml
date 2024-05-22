@@ -2,9 +2,11 @@ services:
   date:
     build:
       dockerfile: date.dockerfile
-  rs-front-ops:
+  result:
     build: .
     ports:
-      - "3000:3000"
+      - '3000:3000'
+    env_file:
+      - .env
     depends_on:
       - date
