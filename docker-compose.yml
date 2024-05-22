@@ -1,8 +1,10 @@
 services:
   date:
+    image: vitalyvitmens/result-date
     build:
       dockerfile: date.dockerfile
   result:
+    image: vitalyvitmens/result
     build: .
     ports:
       - '3000:3000'

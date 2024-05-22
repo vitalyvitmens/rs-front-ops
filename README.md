@@ -87,3 +87,11 @@ docker build -t rs-front-ops .
 - docker compose up -d
 ### стучимся по порту 3000 поднятом Docker
 - curl localhost:3000
+
+## Что бы запушить образы в https://hub.docker.com:
+- в https://hub.docker.com создаем 2 репозитоия с названиями result & result-date
+- в файле docker-compose.yml добавляем поля image: vitalyvitmens/result-date & image: vitalyvitmens/result
+- docker compose build
+- docker login
+- docker compose push | docker push vitalyvitmens/result:latest | docker push vitalyvitmens/result:latest
+
