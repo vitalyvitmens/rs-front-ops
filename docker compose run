@@ -1,0 +1,5 @@
+docker compose run --rm --entrypoint "\
+ certbot certonly --webroot -w /var/www/certbot \
+ -d rs.otm-site.run
+ --agree-tos
+ --force-renewal" certbot
