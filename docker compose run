@@ -1,6 +1,6 @@
 docker compose run --rm --entrypoint "\
  certbot certonly --webroot -w /var/www/certbot \
- --email otm_@tut.by
+ --email 6650977@gmail.com
  -d rs.otm-site.ru
  --agree-tos
  --force-renewal" certbot
